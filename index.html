@@ -1,38 +1,115 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emi Artesã</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emi Artesã — Biscuit personalizado</title>
+    <meta name="description"
+        content="Peças únicas em biscuit feitas à mão com carinho e cuidado. Faça seu pedido personalizado com a Emi Artesã." />
 
-    <link rel="shortcut icon" href="./IMG/EMISITEICON.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/default.css">
     <link rel="stylesheet" href="./CSS/style.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Fonte Montserrat -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <img src="./IMG/Emi ARTESÃ.png" alt="" width="150">
-        <p>Olá, eu sou a Emillayne! Uma apaixonada por personagens, arte e boas histórias. <br><br>
-            Encantada pelo universo criativo desde criança, hoje dou vida a esse amor com minhas criações em biscuit.
-            <br><br>
-            Em breve novidades, aproveite para me seguir nas minhas redes!
-        </p>
-        <section class="links">
-            <a href="">Instagram</a>
-            <a href="">Tiktok</a>
-            <a href="">Youtube</a>
+    <!-- HEADER -->
+    <header>
+        <div class="container nav">
+            <a class="brand" href="#top" aria-label="Emi Artesã - início">
+                <img src="./IMG/LogoDeitada.png" alt="" width="120">
+            </a>
+            <nav class="menu" aria-label="Primária">
+                <a href="#sobre">SOBRE MIM</a>
+                <a href="#orcamento">ORÇAMENTO</a>
+                <a href="#informacoes">INFORMAÇÕES</a>
+                <a href="#exclusivos">EXCLUSIVOS</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="top">
+        <section class="hero">
+            <section class="main container">
+                <img src="./IMG/LogoVertical.png" alt="" width="150">
+                <p>Peça seus personalizados em biscuit comigo!</p>
+                <a class="cta" href="#sobre">CONHECER</a>
+            </section>
+        </section>
+
+        <!-- STRIP with features -->
+        <section class="strip">
+            <div class="container">
+                <div class="features">
+                    <div class="feature">
+                        <img src="./IMG/estrela.png" alt="">
+                        <h3>PEÇAS ÚNICAS</h3>
+                    </div>
+                    <div class="feature">
+                        <img src="./IMG/manual.png" alt="">
+                        <h3>FEITO A MÃO</h3>
+                    </div>
+                    <div class="feature">
+                        <img src="./IMG/especial.png" alt="">
+                        <h3>TOQUE ESPECIAL</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container callout">
+                <img src="./IMG/ramodeflores.png" alt="">
+                <h2>PERSONALIZADOS FEITOS<br />COM CARINHO E CUIDADO</h2>
+                <a class="cta ghost" href="#informacoes">INFORMAÇÕES</a>
+            </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-top">
+            <a class="brand" href="#top" aria-label="Emi Artesã - início">
+                <img src="./IMG/LogoVertical.png" alt="" width="120">
+            </a>
+
+            <div class="legal">
+                <a href="#" aria-label="Políticas de privacidade">Políticas de privacidade</a>
+                <a href="#" aria-label="Termos e condições">Termos e condições</a>
+            </div>
+
+            <div class="social" aria-label="Redes sociais">
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M16.7 3c.5 2.1 2 3.7 4.1 4.2v3.2c-1.7 0-3.3-.6-4.6-1.6v6.8c0 3.7-3 6.4-6.7 6.4S2.9 19.3 2.9 15.6c0-3.7 3-6.6 6.7-6.6.5 0 1 .1 1.5.2v3.4c-.5-.2-1-.3-1.5-.3-1.8 0-3.3 1.5-3.3 3.3 0 1.9 1.5 3.4 3.3 3.4s3.3-1.5 3.3-3.4V3h4.5z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.6A3 3 0 0 0 .5 7.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8zM9.8 15.3V8.7L15.5 12l-5.7 3.3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <p class="copy">Emillayne Evely © — Todos os direitos reservados</p>
+    </footer>
 </body>
 
 </html>
