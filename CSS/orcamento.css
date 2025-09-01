@@ -1,0 +1,66 @@
+.info-orcamento {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.info-orcamento h2 {
+  text-align: center;
+  color: #4f4f4f;
+  font-family: "Amaranth", sans-serif;
+}
+
+.info-orcamento p {
+  max-width: 600px;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-orcamento a {
+  color: #4f4f4f;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-orcamento mark {
+  background: transparent;
+  color: #529897;
+  font-weight: bold;
+}
+
+.botao-orcamento {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px 0px 40px 0px;
+}
+
+.botao-orcamento h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #529897;
+  font-family: "Amaranth", sans-serif;
+}
+
+.cta {
+  text-decoration: none;
+  border: 0;
+  padding: 5px 25px;
+  background: #529897;
+  color: #fbf9f5;
+  border-radius: 999px;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  font-size: 16px;
+  transition: 350ms ease;
+  font-family: "Amaranth", sans-serif;
+}
+
+.cta:hover {
+  background: var(--teal-600);
+}

@@ -1,3 +1,37 @@
+:root {
+  --bg: #fbf9f5;
+  /* fundo off-white */
+  --ink: #2a3535;
+  /* texto principal */
+  --teal: #4aa1a0;
+  /* primário */
+  --teal-600: #3a8685;
+  /* primário escuro */
+  --teal-700: #2f6f6e;
+  --muted: #7f8b8b;
+  --card: #ffffff;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  line-height: 1.6;
+}
+
 /* HEADER */
 .container {
   max-width: 1200px;
@@ -37,7 +71,7 @@ header {
 .menu a {
   color: #2f3a3a;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.6px;
   transition: 350ms ease;
@@ -96,9 +130,10 @@ footer {
 
 .legal a {
   text-decoration: none;
-  color: #2f3a3a;
+  color: #4f4f4f;
 
   transition: 350ms ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .legal a:hover {
@@ -112,20 +147,91 @@ footer {
   text-align: center;
 }
 
+/* Estilo base do overlay */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.modal mark {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+/* Quando ativo */
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Conteúdo central do modal */
+.modal-content {
+  background: #fff;
+  width: 80%;
+  max-width: 800px;
+  height: 700px;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  transform: translateY(-30px);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+/* Efeito de slide ao abrir */
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+/* Botão X */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
 /* RESPONSIVE */
-@media (max-width: 980px) {
-  .menu {
-    display: none;
+@media (max-width: 550px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav .brand {
+    margin: 10px 0px;
+  }
+}
+
+@media (max-height: 800px) {
+  .modal-content {
+    height: 500px;
   }
 }
 
 @media (max-width: 690px) {
   .brand b {
     font-size: 32px;
-  }
-
-  .menu {
-    display: none;
   }
 
   .copy {

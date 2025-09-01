@@ -1,51 +1,14 @@
-:root {
-  --bg: #fbf9f5;
-  /* fundo off-white */
-  --ink: #2a3535;
-  /* texto principal */
-  --teal: #4aa1a0;
-  /* primário */
-  --teal-600: #3a8685;
-  /* primário escuro */
-  --teal-700: #2f6f6e;
-  --muted: #7f8b8b;
-  --card: #ffffff;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --radius: 18px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-    Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji",
-    "Segoe UI Emoji";
-  line-height: 1.6;
-}
-
 /* HERO */
 .hero {
   position: relative;
   background-color: #fbf9f5; /* cor de fundo */
-  background-image: url("../IMG/ramoesquerdo.png"),
-    url("../IMG/ramodireito.png");
+  background-image: url("../IMG/main/RamoEsquerdo.webp"),
+    url("../IMG/main/RamoDireito.webp");
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right bottom;
   background-size: 200px auto, 200px auto; /* ajuste o tamanho */
   padding: 0px 0 60px;
   text-align: center;
-}
-
-@media (max-width: 690px) {
 }
 
 .main {
@@ -57,6 +20,7 @@ body {
   max-width: 560px;
   margin: 0 auto 16px;
   color: var(--muted);
+  font-family: "Montserrat", sans-serif;
 }
 
 .cta {
@@ -66,11 +30,12 @@ body {
   background: #529897;
   color: #fbf9f5;
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   box-shadow: var(--shadow);
   font-size: 16px;
   transition: 350ms ease;
+  font-family: "Amaranth", sans-serif;
 }
 
 .cta:hover {
@@ -104,6 +69,7 @@ body {
   gap: 14px;
   justify-content: center;
   color: #fbf9f5;
+  font-family: "Montserrat", sans-serif;
 }
 
 .feature img {
@@ -114,6 +80,7 @@ body {
   margin: 0;
   font-size: 18px;
   letter-spacing: 1px;
+  font-family: "Amaranth", sans-serif;
 }
 
 /* CALLOUT */
@@ -131,6 +98,7 @@ body {
   font-size: 22px;
   letter-spacing: 0.6px;
   margin: 8px 0 18px;
+  font-family: "Amaranth", sans-serif;
 }
 
 .callout .ghost {
@@ -160,10 +128,6 @@ body {
   .grid {
     grid-template-columns: 1fr;
   }
-
-  .menu {
-    display: none;
-  }
 }
 
 @media (max-width: 690px) {
@@ -178,10 +142,6 @@ body {
   .brand b {
     font-size: 32px;
   }
-
-  .menu {
-    display: none;
-  }
 }
 
 @media (max-width: 400px) {
@@ -195,10 +155,6 @@ body {
 
   .brand b {
     font-size: 32px;
-  }
-
-  .menu {
-    display: none;
   }
 
   .feature img {

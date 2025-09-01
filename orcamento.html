@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./IMG/Logo/SiteLogo.png" type="image/x-icon">
+    <title>Emi Artesã — Biscuit personalizado</title>
+    <meta name="description"
+        content="Peças únicas em biscuit feitas à mão com carinho e cuidado. Faça seu pedido personalizado com a Emi Artesã." />
+
+    <link rel="stylesheet" href="./CSS/default.css">
+    <link rel="stylesheet" href="./CSS/orcamento.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container nav">
+            <a class="brand" href="./index.html" aria-label="Emi Artesã - início">
+                <img src="./IMG/Logo/LogoDeitada.webp" alt="" width="120">
+            </a>
+            <nav class="menu" aria-label="Primária">
+                <a href="./index.html">INÍCIO</a>
+                <a href="./sobremim.html">SOBRE MIM</a>
+                <a href="./orcamento.html">ORÇAMENTO</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="top">
+        <section class="orcamento container">
+
+            <section class="info-orcamento container">
+                <h2>Bem-vindo(a) a página de orçamento!</h2>
+
+                <p>
+                    Na <mark>Emi Artesã</mark>, cada peça é feita com carinho e atenção aos detalhes, por isso, nossos
+                    orçamentos são
+                    personalizados para atender às suas necessidades específicas. Para facilitar esse processo, criamos
+                    um formulário simples que ajuda a entender melhor o seu pedido.
+                    <br><br>
+                    Basta <mark>preencher o formulário</mark> abaixo com as informações sobre o que você deseja, como
+                    tipo de
+                    produto, quantidade, tema e qualquer detalhe especial. Assim, podemos calcular um valor justo e
+                    exclusivo para o seu projeto.
+                    <br><br>
+                    O orçamento é <mark>gratuito e sem compromisso</mark>. Após o envio do seu formulário, entraremos em
+                    contato com um orçamento detalhado e o prazo de entrega estimado. Garantimos que todas as suas
+                    ideias serão transformadas em arte de forma única e cuidadosa!
+                    <br><br>
+                    Ah e não esquece de dar uma olhadinha nas nossas <a href="#"
+                        onclick="openModal('modalPoliticas')">Políticas e condições</a>.
+                </p>
+            </section>
+
+            <section class="botao-orcamento container">
+                <h2>FAÇA SEU ORÇAMENTO ⬇️</h2>
+                <a class="cta" href="https://forms.gle/G7j9NXJinh43duEm6" target="_blank">PREENCHER FORMULÁRIO</a>
+            </section>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-top">
+            <a class="brand" href="#top" aria-label="Emi Artesã - início">
+                <img src="./IMG/Logo/LogoVertical.webp" alt="" width="120">
+            </a>
+
+            <div class="legal">
+                <a href="#" onclick="openModal('modalPoliticas')">Políticas e condições</a>
+            </div>
+
+            <div class="social" aria-label="Redes sociais">
+                <a href="https://www.tiktok.com/@emiartesa?_t=ZM-8zLZiPgS0KE&_r=1" target="_blank" rel="noopener"
+                    aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M16.7 3c.5 2.1 2 3.7 4.1 4.2v3.2c-1.7 0-3.3-.6-4.6-1.6v6.8c0 3.7-3 6.4-6.7 6.4S2.9 19.3 2.9 15.6c0-3.7 3-6.6 6.7-6.6.5 0 1 .1 1.5.2v3.4c-.5-.2-1-.3-1.5-.3-1.8 0-3.3 1.5-3.3 3.3 0 1.9 1.5 3.4 3.3 3.4s3.3-1.5 3.3-3.4V3h4.5z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/emiartesa" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@emiartesa" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.6A3 3 0 0 0 .5 7.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8zM9.8 15.3V8.7L15.5 12l-5.7 3.3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <p class="copy">Emillayne Evely © — Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Modal - Políticas -->
+    <div id="modalPoliticas" class="modal" onclick="outsideClick(event, 'modalPoliticas')">
+        <div class="modal-content">
+            <a class="close-btn" onclick="closeModal('modalPoliticas')">X</a>
+            <h2>Políticas de Privacidade</h2>
+
+            <p>Bem-vindo(a) à Emi Artesã! Ao solicitar um orçamento, realizar um pedido ou adquirir qualquer produto,
+                você declara estar ciente e de acordo com as políticas abaixo.
+                <br><br>
+                1. Coleta e uso de dados <br>
+                Os dados fornecidos pelo cliente (nome, endereço e informações de contato) são usados exclusivamente
+                para orçamento, produção e envio.
+                <br><br>
+                Nenhuma informação é compartilhada com terceiros, exceto quando realmente necessário, como:
+                <br>• envio para a transportadora responsável pela entrega.
+                <br><br>
+                2. Sobre as peças <br>
+                Todas as peças são artesanais, modeladas manualmente em biscuit, podendo apresentar pequenas variações
+                de cor, proporção ou acabamento.
+                <br><br>
+                Peças personalizadas são feitas de acordo com as referências fornecidas pelo cliente, mas adaptações
+                podem ser necessárias para viabilizar o trabalho em biscuit.
+                <br><br>
+                Não são aceitas encomendas para:
+                <br>• revenda;
+                <br>• cópias de outros artesãos;
+                <br>• figuras políticas.
+                <br><br>
+                3. Orçamento <br>
+                O orçamento é gratuito e sem compromisso, sendo o agendamento confirmado apenas após o pagamento da
+                primeira parcela.
+                <br><br>
+                Os valores apresentados no orçamento têm validade de 7 dias corridos.
+                <br>
+                Alterações no pedido após o início da produção podem não ser aceitas ou gerar custos adicionais.
+                <br><br>
+                O valor mínimo por peça é R$260,00. O preço final depende da complexidade, tempo de produção, itens
+                adicionais (acessórios, decorações etc.) e custo de envio.
+                <br><br>
+                4. Pagamentos <br>
+                Forma aceita: PIX (sem taxas).
+                <br>
+                Condições: 50% no momento do pedido | 50% na entrega/antes do envio + valor do frete.
+                <br><br>
+                Após o envio da chave Pix, o pagamento deve ser feito em até 24h. O não pagamento da entrada implica no
+                cancelamento do pedido.
+                <br><br>
+                5. Produção <br>
+                O prazo médio de confecção é de 30 dias úteis, podendo ser estendido em caso de falta de matéria-prima
+                ou imprevistos de saúde (o cliente será informado).
+                <br><br>
+                Caso o cliente seja solicitado a aprovar fotos ou detalhes e não responda em até 3 dias úteis, a
+                produção seguirá conforme planejado, sem direito a alterações posteriores.
+                <br><br>
+                6. Entrega e envio <br>
+                Os envios são realizados exclusivamente pelos Correios.
+                <br><br>
+                O prazo de entrega é estimado pelos Correios, não pela Emi Artesã. Portanto, atrasos, extravios, greves
+                ou outros problemas logísticos são de responsabilidade da transportadora.
+                <br><br>
+                É de inteira responsabilidade do cliente fornecer corretamente todos os dados de entrega. Em caso de
+                endereço incorreto ou incompleto:
+                <br>• se a encomenda retornar, o custo de um novo reenvio será integralmente do cliente.
+                <br><br>
+                Todos os envios contam com seguro e código de rastreio, que será informado após a postagem.
+                <br><br>
+                Danos ocorridos durante o transporte devem ser reclamados diretamente junto aos Correios, utilizando o
+                seguro do envio, quando aplicável.
+                <br><br>
+                7. Cancelamentos e reembolsos <br>
+                Cancelamentos só serão aceitos antes do início da produção.
+                <br>
+                Uma vez iniciada a produção, não será realizado reembolso.
+                <br><br>
+                Não se aplica o direito de arrependimento (7 dias) previsto no Código de Defesa do Consumidor, pois
+                trata-se de produto personalizado, conforme exceção prevista pelo PROCON.
+                <br><br>
+                8. Conservação da peça <br>
+                As peças são delicadas e não são brinquedos.
+                <br>
+                Recomenda-se manter em local protegido da umidade, calor excessivo e luz solar direta.
+                <br><br>
+                Quedas, impactos ou mau uso que resultem em quebra não são de responsabilidade da Emi Artesã.
+                <br><br>
+                9. Propriedade intelectual <br>
+                Todas as peças da Emi Artesã são produzidas manual e artesanalmente, com dedicação e exclusividade.
+                <br><br>
+                A aquisição garante apenas a posse física do item, não autorizando reprodução, cópia, digitalização
+                (incluindo escaneamento 3D) ou uso comercial.
+                <br><br>
+                É proibida a revenda ou utilização das peças para fins comerciais (como revenda em lojas ou plataformas
+                online) sem autorização expressa.
+                <br><br>
+                Fotos, descrições e materiais de divulgação da Emi Artesã não podem ser utilizados sem permissão.
+                <br><br>
+                10. Direito de imagem e divulgação <br>
+                Ao solicitar uma peça, o cliente autoriza a Emi Artesã a fotografar e divulgar imagens do trabalho final
+                em redes sociais, portfólio e materiais de divulgação.
+                <br><br>
+                Caso o cliente não queira que sua peça seja divulgada, deve informar no momento do pedido.
+                <br><br>
+                Essa autorização não gera nenhum ônus ou benefício financeiro adicional ao cliente.
+                <br><br>
+                11. Considerações finais <br>
+                Ao efetuar um pedido, o cliente declara ter lido, compreendido e aceitado integralmente estas políticas.
+                <br><br>
+                A Emi Artesã poderá atualizar ou ajustar estas políticas sempre que necessário, visando maior
+                transparência, clareza e segurança para ambas as partes.
+                <br><br>
+                Recomenda-se que o cliente consulte esta página a cada nova encomenda, pois as condições em vigor serão
+                sempre aquelas publicadas no momento da confirmação do pedido.
+                <br><br>
+                👉 Caso esteja de acordo com estas políticas, prossiga com o preenchimento do formulário para darmos
+                continuidade à criação da sua peça.
+                <br><br>
+                Muito obrigado por ter lido e dedicado seu tempo para conhecer nossas políticas! 💚
+                <br><br>
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        // Abrir modal
+        function openModal(id) {
+            document.getElementById(id).classList.add('show');
+            document.getElementById(id).style.pointerEvents = 'All'
+        }
+
+        // Fechar modal
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('show');
+        }
+
+        function outsideClick(event, id) {
+            const modal = document.getElementById(id);
+            const content = modal.querySelector('.modal-content');
+            if (!content.contains(event.target)) {
+                closeModal(id);
+            }
+        }
+    </script>
+</body>
+
+</html>
