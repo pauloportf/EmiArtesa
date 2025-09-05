@@ -94,6 +94,12 @@
   transition: 350ms ease;
 }
 
+@media (max-width: 797px) {
+  .sobre-segundo {
+    width: 400px;
+  }
+}
+
 @media (max-width: 690px) {
   .column {
     margin: 20px 0px 0px 0px;
