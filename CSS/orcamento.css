@@ -64,3 +64,57 @@
 .cta:hover {
   background: var(--teal-600);
 }
+
+/* Accordion */
+
+.faq {
+  margin: 0px 0px 20px 0px;
+}
+
+.faq-1 h2 {
+  font-family: "Amaranth", sans-serif;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  background: #f2f2f2;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background: #e2e2e2;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+  font-family: "Montsserrat", sans-serif;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 600px; /* Ajuste conforme necessário */
+  padding: 15px;
+}

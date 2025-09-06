@@ -18,6 +18,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: #529897; /* fundo da seleção */
+  color: #f5f5f5; /* cor do texto selecionado */
+}
+
 html {
   scroll-behavior: smooth;
 }
